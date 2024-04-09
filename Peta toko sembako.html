@@ -1,0 +1,2695 @@
+<html lang="en-US" class="wf-lora-i4-active wf-lora-n7-active wf-montserrat-n4-active wf-montserrat-n7-active wf-opensans-n4-active wf-opensans-i4-active wf-opensans-n7-active wf-opensans-i7-active wf-lora-n4-active wf-active">
+<html lang="en"></html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+		 <style>
+         #map {
+	width : 1145px;
+	height : 480px;
+	margin : auto;
+	padding : 5px;
+	}
+		</style>
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.licdn.com/dms/image/C4E03AQHsxEiwNds2Jg/profile-displayphoto-shrink_200_200/0/1626964215669?e=2147483647&v=beta&t=Ho3LIr2Yo7hdHy-0XFn7Ohv7XYKwZ4w1ZxS3dHcrRFc" rel="SHORTCUT ICON"/>
+    <title>Peta Persebaran Toko Sembako</title>
+    <link href="https://media.licdn.com/dms/image/C4E03AQHsxEiwNds2Jg/profile-displayphoto-shrink_200_200/0/1626964215669?e=2147483647&v=beta&t=Ho3LIr2Yo7hdHy-0XFn7Ohv7XYKwZ4w1ZxS3dHcrRFc" rel="SHORTCUT ICON" />
+    <meta name="robots" content="max-image-preview:large" />
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NP51LGZW7N&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-165289732-1&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128980122-19&amp;l=dataLayer&amp;cx=c"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        svgExt: ".svg",
+        source: { concatemoji: "https:\/\/fkt.ugm.ac.id\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3" },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+          var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+            r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")
+                ? !1
+                : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") &&
+                    !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+            case "emoji":
+              return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff");
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if ("object" == typeof e && "number" == typeof e.timestamp && new Date().valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+                try {
+                  var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e) (n.supports[t] = e[t]), (n.supports.everything = n.supports.everything && n.supports[t]), "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+      /* ]]> */
+    </script>
+    <link rel="stylesheet" id="bootstrap_tab-css" href="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/css/bootstrap_tab.min.css?ver=6.4.3" type="text/css" media="all" />
+    <link rel="stylesheet" id="bootstrap_dropdown-css" href="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/css/bootstrap_dropdown.min.css?ver=6.4.3" type="text/css" media="all" />
+    <link rel="stylesheet" id="ert_tab_icon_css-css" href="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/css/res_tab_icon.css?ver=6.4.3" type="text/css" media="all" />
+    <style id="wp-emoji-styles-inline-css" type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link rel="stylesheet" id="wp-block-library-css" href="https://fkt.ugm.ac.id/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3" type="text/css" media="all" />
+    <style id="pdfemb-pdf-embedder-viewer-style-inline-css" type="text/css">
+      .wp-block-pdfemb-pdf-embedder-viewer {
+        max-width: none;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel="stylesheet" id="contact-form-7-css" href="https://fkt.ugm.ac.id/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.3" type="text/css" media="all" />
+    <link rel="stylesheet" id="tablepress-default-css" href="https://fkt.ugm.ac.id/wp-content/plugins/tablepress/css/build/default.css?ver=2.3" type="text/css" media="all" />
+    <link rel="stylesheet" id="ecae-frontend-css" href="https://fkt.ugm.ac.id/wp-content/plugins/easy-custom-auto-excerpt/assets/style-frontend.css?ver=2.4.12" type="text/css" media="all" />
+    <link rel="stylesheet" id="ecae-buttonskin-none-css" href="https://fkt.ugm.ac.id/wp-content/plugins/easy-custom-auto-excerpt/buttons/ecae-buttonskin-none.css?ver=2.4.12" type="text/css" media="all" />
+    <link rel="stylesheet" id="ugm-theme-css" href="https://fkt.ugm.ac.id/wp-content/themes/ugm-theme-dev-dedi/assets/css/style.css?ver=1.0.0" type="text/css" media="all" />
+    <link rel="stylesheet" id="ugm-custom-css-css" href="https://fkt.ugm.ac.id/wp-content/themes/ugm-theme-dev-dedi/assets/css/custom.css?ver=1.0.0" type="text/css" media="all" />
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <link rel="https://api.w.org/" href="https://fkt.ugm.ac.id/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://fkt.ugm.ac.id/wp-json/wp/v2/pages/918" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fkt.ugm.ac.id/xmlrpc.php?rsd" />
+    <link rel="canonical" href="https://fkt.ugm.ac.id/kemahasiswaan/" />
+    <link rel="shortlink" href="https://fkt.ugm.ac.id/?p=918" />
+    <link rel="alternate" type="application/json+oembed" href="https://fkt.ugm.ac.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffkt.ugm.ac.id%2Fkemahasiswaan%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://fkt.ugm.ac.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffkt.ugm.ac.id%2Fkemahasiswaan%2F&amp;format=xml" />
+
+    <!-- GA Google Analytics @ https://m0n.co/ga -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128980122-19"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-128980122-19");
+    </script>
+
+    <meta name="generator" content="Site Kit by Google 1.123.1" />
+    <style>
+      a {
+        color: #c25a0a;
+      }
+      a:hover,
+      a:focus {
+        color: #c25a0a;
+        /*                 background-color: darken($brand-tertiary-bg, 3%);*/
+      }
+      .tpb .widget-list ul li a:hover {
+        color: #c25a0a;
+      }
+      .btn-more:after {
+        border: 2px solid #c25a0a;
+      }
+      @media (max-width: 1024px) {
+        .topbar .navbar-nav li a:hover {
+          color: #c25a0a;
+        }
+      }
+      @media (max-width: 1024px) {
+        .topbar .navbar-nav li .pll-parent-menu-item > .dropdown-menu a:hover {
+          color: #c25a0a;
+        }
+      }
+      .section-header .author-header .author-social a:hover {
+        color: #c25a0a;
+      }
+      /*                .post .post-content .post-title >h3:hover a {
+                    color: ;
+                }*/
+      .post .post-content .post-title .post-meta a:hover {
+        color: #c25a0a;
+      }
+      .post .post-content .entry-content .ecae-button .ecae-link {
+        color: #c25a0a;
+      }
+      .post .post-event .content-solid .event-date > span {
+        background-color: #c25a0a;
+      }
+      #newsfeed .post .entry-content p a:hover {
+        color: #c25a0a;
+      }
+      #newsfeed .post .entry-content .btn-box a {
+        color: #c25a0a;
+      }
+      #newsfeed .post .entry-content .btn-box a:after {
+        color: #c25a0a;
+      }
+      #info .btn-more:after {
+        color: #c25a0a;
+      }
+      #gallery-heading .section-title h2:after {
+        border-color: #c25a0a;
+      }
+      .tpb .widget-list .tpb-title ul li a:hover {
+        color: #c25a0a;
+      }
+      /* iki bagaimana ? */
+      event-table table > table a:hover {
+        color: #c25a0a;
+      }
+      .single-post .post-heading .entry-meta li a:hover {
+        color: #c25a0a;
+      }
+      #directory .directory-link li a:hover {
+        color: #c25a0a;
+      }
+      #content .dotted-list .directory-link li > a:hover:before {
+        background-color: #c25a0a;
+      }
+      #sidebar .sidebar-menu .list-menu li:hover > a,
+      .current > a {
+        color: #c25a0a;
+      }
+      #sidebar .sidebar-menu .list-menu li:hover > a,
+      .current > a:before {
+        color: #c25a0a;
+      }
+      .data-list li a:hover {
+        color: #c25a0a;
+      }
+      .data-list li a:hover:before {
+        color: #c25a0a;
+      }
+      widget-link:hover {
+        color: #c25a0a;
+      }
+      .tagcloud a {
+        background-color: #c25a0a;
+      }
+      .tagcloud a:hover {
+        background-color: #c25a0a;
+      }
+      .event-list a:hover {
+        color: #c25a0a;
+      }
+      .widget #recentcomments .recentcomments:hover .comment-author-link a {
+        color: #c25a0a;
+      }
+      .widget #wp-calendar #next a {
+        color: #c25a0a;
+      }
+      #comments .entry-comments .comment .comment-author > a:hover {
+        color: #c25a0a;
+      }
+
+      #header .topbar {
+        background-color: #2d1b0d;
+      }
+      /*		#header .navbar-brand{
+			background-color: ;
+		}*/
+      #footer .footer-copyright {
+        background-color: #2d1b0d;
+      }
+      #navbar .nav > li > .search-form .form-control {
+        background-color: #2d1b0d;
+      }
+      .btn-primary,
+      .single-page .contact-form input[type*="submit"] {
+        background-color: #2d1b0d;
+        border-color: #2d1b0d;
+      }
+
+      .btn-outline {
+        color: #3c1c03;
+      }
+      .btn-outline:hover {
+        background-color: #3c1c03;
+        border-color: #3c1c03;
+      }
+
+      #header .navbar-brand {
+        background-color: #3c1c03;
+      }
+      #header {
+        background-color: #3c1c03;
+      }
+      .section-header .section-subtitle > span > h2 {
+        color: #3c1c03;
+      }
+      .section-header .author-title {
+        color: #3c1c03;
+      }
+      .post-slider {
+        background-color: #3c1c03;
+      }
+      .post-slider > .button {
+        background-color: #3c1c03;
+      }
+      .post-slider > .button:before {
+        color: #3c1c03;
+        background-color: transparent !important;
+      }
+      .post-slider > .button:hover:before {
+        color: #3c1c03;
+      }
+      .featured-content .post-content {
+        background-color: rgba(#3c1c03, 0.95);
+      }
+      .featured-content .post-content {
+        background-color: rgba(#3c1c03, 0.95);
+      }
+      .content-solid .event-date > span > strong {
+        background-color: #3c1c03;
+      }
+      .section-page .section-title h2 {
+        color: #3c1c03;
+      }
+
+      #newsfeed .post .post-title h3 {
+        color: #3c1c03;
+      }
+      #newsfeed .post .post-title h3:after {
+        background-color: #3c1c03;
+      }
+
+      #newsfeed .post .post-title .entry-content .btn-box:hover {
+        color: #3c1c03;
+      }
+      #newsfeed .post .post-title .entry-content .btn-box:hover:after {
+        color: #3c1c03;
+      }
+
+      #gallery {
+        background-color: #3c1c03;
+      }
+
+      #info .btn-more:hover:after {
+        color: #3c1c03;
+      }
+      .tpb-icon-item {
+        color: #3c1c03;
+      }
+      .content-boxed .tpb-icon-container {
+        background-color: #3c1c03;
+      }
+      .single-post .post-content table th {
+        background-color: #3c1c03;
+      }
+      .single-page .address-box .address-title {
+        color: #3c1c03;
+      }
+
+      .single-page .profile-item .profile-content .name-title {
+        color: #3c1c03;
+      }
+
+      .panel-box .panel-title {
+        color: #3c1c03;
+      }
+
+      #directory .directory-link li a {
+        color: #3c1c03;
+      }
+      #directory .alphabet section h6 {
+        color: #3c1c03;
+      }
+      .gallery-item .gallery-img a:before {
+        background-color: rgba(#3c1c03, 0.6);
+      }
+
+      .portfolio-item .portfolio-img a:before {
+        background-color: rgba(#3c1c03, 0.6);
+      }
+
+      .slider-nav .gallery-item > button {
+        background-color: #3c1c03;
+      }
+      .slider-nav .gallery-item > button:hover:before {
+        color: #3c1c03;
+      }
+
+      .tagcloud a {
+        color: #3c1c03;
+      }
+
+      #comments #respond > .comment-reply-title {
+        color: #3c1c03;
+      }
+      #wp-calendar tbody td a:before {
+        background-color: #3c1c03;
+      }
+      #Comments .entry-comments .comment .comment-edit-link {
+        border-color: #3c1c03;
+        background-color: #3c1c03;
+      }
+      #Comments .entry-comments .comment .comment-edit-link:hover {
+        border-color: darken(#3c1c03, 5%);
+        background-color: darken(#3c1c03, 5%);
+      }
+      #footer .footer-body {
+        background-color: #3c1c03;
+      }
+
+      /* .widget-title > widget-title -> */
+      .content-boxed .tpb-icon-container {
+        background-color: #3c1c03;
+      }
+      .tpb.tpb-icon .content-boxed .tpb-icon-container,
+      .tpb.tpb-icon_fa .content-boxed .tpb-icon-container,
+      .tpb.tpb-image_icon .content-boxed .tpb-icon-container {
+        background-color: #3c1c03;
+      }
+      .post-slider.content-overlay .post {
+        background-color: #3c1c03;
+      }
+      .content .content-header > h2,
+      #content .content-header > h2,
+      .tpb-title > h2,
+      .single-post .content-heading > h2,
+      .panel-header > h2,
+      .widget .widget-header > h2,
+      #comments .comment-header > h2,
+      .content .content-header h3,
+      #content .content-header h3,
+      .tpb-title h3,
+      .single-post .content-heading h3,
+      .panel-header h3,
+      .widget .widget-header h3,
+      #comments .comment-header h3,
+      .content .content-header h4,
+      #content .content-header h4,
+      .tpb-title h4,
+      .single-post .content-heading h4,
+      .panel-header h4,
+      .widget .widget-header h4,
+      #comments .comment-header h4,
+      .content .content-header > .widget-title,
+      #content .content-header > .widget-title,
+      .tpb-title > .widget-title,
+      .single-post .content-heading > .widget-title,
+      .panel-header > .widget-title,
+      .widget .widget-header > .widget-title,
+      #comments .comment-header > .widget-title {
+        color: #3c1c03;
+      }
+
+      widget-title > .widget-title {
+        border-bottom: 3px solid #fdcb2c;
+      }
+      .widget .widget-header > .widget-title,
+      #comments .comment-header > .widget-title {
+        border-bottom: 3px solid #fdcb2c;
+      }
+      #header #navbar .navbar-nav > li.active > a {
+        color: #fdcb2c;
+      }
+      #header #navbar .dropdown-menu > li.active > a {
+        color: #fdcb2c;
+      }
+      #header #navbar .dropdown-menu > li.current-menu-ancestor > a:after {
+        border-color: transparent transparent transparent #fdcb2c;
+      }
+      .post-slider.content-overlay .post-content {
+        background-color: #fdcb2c;
+      }
+      .content .content-header > h2,
+      #content .content-header > h2,
+      .tpb-title > h2,
+      .single-post .content-heading > h2,
+      .panel-header > h2,
+      .widget .widget-header > h2,
+      #comments .comment-header > h2,
+      .content .content-header h3,
+      #content .content-header h3,
+      .tpb-title h3,
+      .single-post .content-heading h3,
+      .panel-header h3,
+      .widget .widget-header h3,
+      #comments .comment-header h3,
+      .content .content-header h4,
+      #content .content-header h4,
+      .tpb-title h4,
+      .single-post .content-heading h4,
+      .panel-header h4,
+      .widget .widget-header h4,
+      #comments .comment-header h4,
+      .content .content-header > .widget-title,
+      #content .content-header > .widget-title,
+      .tpb-title > .widget-title,
+      .single-post .content-heading > .widget-title,
+      .panel-header > .widget-title,
+      .widget .widget-header > .widget-title,
+      #comments .comment-header > .widget-title {
+        border-bottom: 3px solid #fdcb2c;
+      }
+      .post-slider .post .btn-more {
+        color: #fdcb2c;
+      }
+      .slick-prev,
+      .slick-next {
+        background: #fdcb2c;
+      }
+
+      .dropdown-menu > li > a:hover {
+        color: #fdcb2c;
+      }
+      /* .dropdown-menu > li > a:focus {
+                    color: <?php// echo $brand_yellow; ?>;
+                }*/
+      blockquote {
+        border-left: 5px solid #fdcb2c;
+      }
+      .post .post-content .post-title > h3:hover a {
+        color: #fdcb2c;
+      }
+      .post-slider.brand-yellow {
+        background-color: #fdcb2c;
+      }
+      /*                 #header .topbar .navbar-nav>li>a:hover{
+                     color: ;
+                 }
+                  #footer p, #footer address, #footer a:hover {
+                     color: ;
+                 }*/
+
+      #header #navbar .navbar-nav > li.active > a {
+        background-color: #2d1b0d;
+      }
+      #header #navbar .dropdown:hover > a {
+        background-color: #2d1b0d;
+      }
+      .dropdown-menu {
+        background-color: #2d1b0d;
+      }
+      .dropdown-menu > li > a:hover {
+        background-color: #2d1b0d;
+      }
+      #header #navbar .dropdown-menu .menu-item-has-children > .dropdown-menu {
+        background-color: #2d1b0d;
+      }
+      .tpb .post-slider .post-img a {
+        background-color: #2d1b0d;
+      }
+
+      #header .topbar .navbar-nav > li > a {
+        color: #ffffff;
+      }
+      #footer p,
+      #footer address,
+      #footer a {
+        color: #ffffff;
+      }
+
+      #header .navbar-brand {
+        color: #ffffff;
+      }
+      #header.header-compact #navbar .nav > li > a,
+      #header.header-fancy #navbar .nav > li > a {
+        color: #ffffff;
+      }
+      /*                 .post .post-content .post-title > h3{
+                      color: ;
+                 }*/
+      /*                  .dropdown-menu > li > a {
+                    color: ;
+                }*/
+
+      #header.header-compact #navbar .nav > li > a:hover,
+      #header.header-fancy #navbar .nav > li > a {
+        color: #ffffff;
+      }
+    </style>
+    <meta name="google-site-verification" content="s49J35oHh9RwU-jjvtyvAaLA_fAN_0Y35Rj4E4ZOy4s" />
+    <meta
+      name="generator"
+      content="Elementor 3.19.3; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap"
+    />
+    <style type="text/css">
+      .post .post-content .post_list { display: text-align:justify; }
+
+      .panel-box ul a:hover, .post-list a:hover, .widget ul li a:hover, .widget.widget_rss ul li a:hover {
+
+          color: #c25a0a;
+
+      }
+      #header.header-compact
+      #navbar .nav &gt; li.current-menu-ancestor &gt; a::after,
+      #header.header-fancy #navbar .nav &gt; li.current-menu-ancestor &gt; a::after,
+      #header.header-compact #navbar .nav &gt; li.active &gt; a::after,
+      #header.header-fancy #navbar .nav &gt; li.active &gt; a::after,
+      #header.header-compact #navbar .nav &gt; li:hover &gt; a::after,
+      #header.header-fancy #navbar .nav &gt; li:hover &gt; a::after,
+      #header.header-compact #navbar .nav &gt; li:focus &gt; a::after,
+      #header.header-fancy #navbar .nav &gt; li:focus &gt; a::after
+      {
+
+          border-bottom: 3px solid #9e6f4b;
+
+      }
+      .dropdown-menu &gt; li &gt; a:hover, .dropdown-menu &gt; li &gt; a:focus {
+
+          text-decoration: none;
+          color: #9e6f4b;
+          background-color: #251000;
+
+      }
+
+      .breadcrumb &gt; .active, .breadcrumb &gt; .active a {
+
+          color: #9e5e2d;
+
+      }
+
+      .breadcrumb &gt; li:hover &gt; a {
+
+          color: #9e5e2d;
+
+      }
+
+      .post .post-content .post-title &gt; h3:hover a {
+
+          color: #9e5e2d;
+
+      }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-165289732-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-165289732-1");
+    </script>
+    <!-- Google tag (gtag.js) - GTAG 4 UGM-wide -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L4JC39NX24"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-L4JC39NX24");
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700%7CMontserrat:400,700%7COpen+Sans:400,400i,700,700i" media="all" />
+    <script src="https://fkt.ugm.ac.id/wp-includes/js/wp-emoji-release.min.js?ver=6.4.3" defer=""></script>
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+  </head>
+    <body class="page-template-default page page-id-918 elementor-default elementor-kit-4267">
+          <header id="header">
+            <nav class="navbar navbar-default topbar">
+              <div class="container">
+                <div class="header-nav">
+                  <button class="nav-more"><i class="ion ion-android-more-vertical"></i></button>
+            <div class="container">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                  <img src="https://fkt.ugm.ac.id/wp-content/themes/ugm-theme-dev-dedi/assets/images/ugm_logo.png" alt="Universitas Gadjah Mada" class="img-responsive" />
+      
+                  <span> Teknologi Survei dan Pemetaan Dasar<br />Universitas Gadjah Mada </span>
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <nav id="navbar" class="navbar navbar-collapse collapse navbar-default"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-2394" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2394 dropdown"><a title="Abstrak" href="https://ferdian1604.github.io/Tugas_M7_SIGWEB_Abstrak/Abstrak.html# " data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Abstrak<span class="caret"></span></a>
+                  </li>
+                  <li id="menu-item-2383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2383 dropdown"><a title="Tentang Bantul" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Tentang Bantul<span class="caret"></span></a>
+                  <ul role="menu" class=" dropdown-menu ">
+                      <li id="menu-item-2406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2406"><a title="Semboyan Bantul" href="https://ferdian1604.github.io/Tugas_M7_SIGWEB_Lambang/Semboyan%20Kab%20Bantul.html"><div>Semboyan Bantul</div> </a></li>
+                      <li id="menu-item-2403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2403"><a title="Lambang Daerah" href="https://ferdian1604.github.io/Tugas_M7_SIGWEB_simbol/Lambang%20Kab%20Bantul.html"> <div>Lambang Daerah</div> </a>
+                      <li id="menu-item-2407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2407"><a title="Sejarah Bantul" href="https://ferdian1604.github.io/Tugas_M7_SIGWEB_sejarah/Sejarah%20Kab%20Bantul.html"> <div>Sejarah Bantul</div> </a></li>
+                  </ul>
+                  </li>
+                  <li id="menu-item-2396" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2396 dropdown"><a title="Peta" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Peta <span class="caret"></span></a>
+                  <ul role="menu" class=" dropdown-menu ">
+                      <li id="menu-item-2398" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-918 current_page_item menu-item-2398 active">
+                          <a title="Peta Persebaran Toko Sembako" href="https://ferdian1604.github.io/Tugas_M7_SIGWEB_sembako/Peta%20toko%20sembako.html ">Peta Persebaran Toko Sembako</a>
+                        </li>
+                        <li id="menu-item-2397" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2397"><a title="Peta Persebaran Kntor Kepala Desa" href="https://ferdian1604.github.io/ferdian1604-Tugas_M7_SIGWEB_kepala-desa/Peta%20kepala%20desa.html">Peta Persebaran Kntor Kepala Desa</a></li>
+      
+                  </ul>
+                  </li>
+                  <li id="menu-item-2384" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2384 dropdown"><a title="Profil" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Profil <span class="caret"></span></a>
+                  <ul role="menu" class=" dropdown-menu ">
+                      <li id="menu-item-4801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2406"><a title="Tentang Penulis" href="https://ferdian1604.github.io/ferdian1604-Tugas_M7_SIGWEB_penulis/Hasil%20tugas%202.html ">Tentang Penulis</a></li>
+                      <li id="menu-item-4806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2383 dropdown">
+                          <a title="kontak" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Kontak <span class="caret"></span></a>
+                          <ul role="menu" class="dropdown-menu">
+                          <li><a title="WhatsApp" href="https://wa.me/qr/AV4RIW5FJP62P1">WhatsApp</a></li>
+                          <li><a title="Instagram" href="https://www.instagram.com/fer_dyn1604?igsh=MTRtand5dGlyZHVwaw==">Instagram</a></li>
+                          <li><a title="Line" href="https://line.me/ti/p/rArZLOFIQZ">Line</a></li>
+                      </ul>
+                  </li>
+                  </ul>
+                  </li>
+				  <li id="menu-item-2395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2395 dropdown"><a title="Home" href="https://ferdian1604.github.io/Tugas_M7_SIGWEB_web-home/Home.html " data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Home <span class="caret"></span></a>
+                 </ul>
+                  </li>
+          </header>
+
+    <div class="body">
+	<div class="judul"><h2>PETA PERSEBARAN TOKO SEMBAKO DI KABUPATEN  BANTUL, YOGYAKARTA</h2>
+             
+                  </div>
+      <br>
+    <div id="map"></div>
+    <script>
+    var map = L.map('map').setView([-7.8866666666667,110.3275],13);
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution : '@OpenStreetMap'
+		}).addTo(map);
+		function onMapClick(e) {
+				L.popup()
+					.setLatLng(e.latlng)
+					.setContent('Koordinat'+ e.latlng.toString())
+					.openOn(map);
+					}
+					map.on('click', onMapClick);
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.915232500513399, 110.35858952577556], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Bu Asih</b><br>-7.915232500513399, 110.35858952577556').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.894776489329963, 110.37233546952636], {icon:marker1}).bindPopup
+			('<b> Toko Sembako Tabriiz Barokah</b><br>-7.894776489329963, 110.37233546952636').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.902407145447701, 110.33702208628266], {icon:marker1}).bindPopup
+			('<b> Toko Toko Anda (sembako, dll)</b><br>-7.902407145447701, 110.33702208628266').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.895254777093428, 110.35852613061844], {icon:marker1}).bindPopup
+			('<b> Toko Sembako Bu Jazim</b><br>-7.895254777093428, 110.35852613061844').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.890493792949897, 110.35629453278858], {icon:marker1}).bindPopup
+			('<b> Toko Sembako Keyongan</b><br>-7.890493792949897, 110.35629453278858').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.8961226355960195, 110.34933019978818], {icon:marker1}).bindPopup
+			('<b>Warung Sembako Mabah Karino</b><br>-7.8961226355960195, 110.34933019978818').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.896837539089456, 110.34009183614306], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Dian Jaya</b><br>-7.896837539089456, 110.34009183614306').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.890493792949897, 110.35629453278858], {icon:marker1}).bindPopup
+			('<b>Toko Sembako</b><br>-7.890493792949897, 110.35629453278858').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.892262135356092, 110.34384492137389], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Bayu</b><br>-7.892262135356092, 110.34384492137389').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.879045041903397, 110.34689398103372], {icon:marker1}).bindPopup
+			('<b> Warung Sembako & Es Jadul (T&D)</b><br>-7.879045041903397, 110.34689398103372').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.881449775437231, 110.33766887912323], {icon:marker1}).bindPopup
+			('<b>Warung Sembako PO Store </b><br>-7.881449775437231, 110.33766887912323').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.86124957992277, 110.35393419038645], {icon:marker1}).bindPopup
+			('<b>Toko Sembako dan Kelontong Pak Parman </b><br>-7.86124957992277, 110.35393419038645').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.88215218633925, 110.32910666198211], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Lestari BANTUL </b><br>-7.88215218633925, 110.32910666198211').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.886824773720705, 110.3194238102388], {icon:marker1}).bindPopup
+			('<b>Toko Sembako HM </b><br>-7.886824773720705, 110.3194238102388').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.86816607320135, 110.31582665882799 ], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Aulia </b><br>-7.86816607320135, 110.31582665882799').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.846785265703759, 110.32554803797055 ], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Ceria </b><br>-7.846785265703759, 110.3255480379705').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.8358647297644834, 110.32840601091203 ], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Adna </b><br>-7.8358647297644834, 110.32840601091203').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.8787362959981255, 110.29615174485816 ], {icon:marker1}).bindPopup
+			('<b>Toko Sedulur Sembako </b><br>-7.8787362959981255, 110.29615174485816').addTo(map);
+		
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.856954951485094, 110.30282785510076 ], {icon:marker1}).bindPopup
+			('<b>Keany (Warung Sembako Bu Putro </b><br>-7.856954951485094, 110.30282785510076').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.840024647385763, 110.34353160420679 ], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Pak Yatno </b><br>-7.840024647385763, 110.34353160420679').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.83988382338672, 110.34331861282897 ], {icon:marker1}).bindPopup
+			('<b>Toko Sembako Rumah Berkah </b><br>-7.83988382338672, 110.34331861282897 ').addTo(map);
+			
+			var marker1 = L.icon({
+			iconUrl:'https://cdn.icon-icons.com/icons2/514/PNG/96/shop_icon-icons.com_51010.png',
+			iconSize:[40,40],
+			});
+			L.marker([-7.839927520547275, 110.34391060807788 ], {icon:marker1}).bindPopup
+			('<b>Toko Ganang "Grosir & Eceran" </b><br>-7.839927520547275, 110.34391060807788').addTo(map);
+			
+		</script>
+              
+
+          <div id="sidebar" class="col-md-3 col-md-offset-1">
+            <div class="row"></div>
+            <!-- widget-area -->
+          </div>
+          <!-- side-bar -->
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.3" id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+      /* <![CDATA[ */
+      var wpcf7 = { api: { root: "https:\/\/fkt.ugm.ac.id\/wp-json\/", namespace: "contact-form-7\/v1" } };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.3" id="contact-form-7-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/js/bootstrap-dropdown.js?ver=3.1" id="bootstrap_dropdown-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/js/bootstrap-tab.js?ver=3.1" id="bootstrap_tab-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/js/bootstrap-tabdrop.js?ver=3.1" id="ert_tab_js-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/plugins/easy-responsive-tabs/assets/js/ert_js.php?ver=3.1" id="ert_js-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/themes/ugm-theme-dev-dedi/assets/js/bootstrap.min.js?ver=3.3.7" id="bootstrap-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/themes/ugm-theme-dev-dedi/assets/js/slick.min.js?ver=1.6.0" id="slick-js"></script>
+    <script type="text/javascript" src="https://fkt.ugm.ac.id/wp-content/themes/ugm-theme-dev-dedi/assets/js/apps.js" id="apps-js"></script>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: ["Lora:400,400i,700", "Montserrat:400,700", "Open+Sans:400,400i,700,700i"] },
+      };
+      (function () {
+        var wf = document.createElement("script");
+        wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </body>
+</html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- This site is optimized with the Yoast SEO plugin v22.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    
+    <meta
+      property="og:description"
+      content="Program Sarjana /*! elementor – v3.19.0 – 26-02-2024 */ .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=”.svg”]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block} Kedokteran Menjadi Program Studi Kedokteran nasional berstandar global yang inovatif dan unggul, serta mengabdi kepada kepentingan […]"
+    />
+    <meta property="og:url" content="https://fkkmk.ugm.ac.id/program-sarjana/" />
+    <meta property="og:site_name" content="FK-KMK UGM" />
+    <meta property="article:publisher" content="https://www.facebook.com/fkkmkugm" />
+    <meta property="article:modified_time" content="2024-03-07T03:23:03+00:00" />
+    <meta property="og:image" content="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/05/kedokteran-scaled-1-1024x683.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@fkkmkugm" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="1 minute" />
+    <style class="fit-vids-style" id="fit-vids-style">
+      .fluid-width-video-wrapper {
+        width: 100%;
+        position: relative;
+        padding: 0;
+      }
+      .fluid-width-video-wrapper iframe,
+      .fluid-width-video-wrapper object,
+      .fluid-width-video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-EXZ1E44X6K&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="application/ld+json" class="yoast-schema-graph">
+    
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+    
+    <script>
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        svgExt: ".svg",
+        source: { concatemoji: "https:\/\/fkkmk.ugm.ac.id\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3" },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+          var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+            r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")
+                ? !1
+                : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") &&
+                    !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+            case "emoji":
+              return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff");
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if ("object" == typeof e && "number" == typeof e.timestamp && new Date().valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+                try {
+                  var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e) (n.supports[t] = e[t]), (n.supports.everything = n.supports.everything && n.supports[t]), "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id="pdfemb-pdf-embedder-viewer-style-inline-css">
+      .wp-block-pdfemb-pdf-embedder-viewer {
+        max-width: none;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel="stylesheet" id="hello-elementor-css" href="https://fkkmk.ugm.ac.id/wp-content/themes/hello-elementor/style.min.css?ver=3.0.1" media="all" />
+    <link rel="stylesheet" id="hello-elementor-theme-style-css" href="https://fkkmk.ugm.ac.id/wp-content/themes/hello-elementor/theme.min.css?ver=3.0.1" media="all" />
+    <link rel="stylesheet" id="hello-elementor-header-footer-css" href="https://fkkmk.ugm.ac.id/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.0.1" media="all" />
+    <link rel="stylesheet" id="elementor-frontend-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.19.3" media="all" />
+    <link rel="stylesheet" id="elementor-post-30843-css" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/elementor/css/post-30843.css?ver=1709777468" media="all" />
+    <link rel="stylesheet" id="elementor-lazyload-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/css/modules/lazyload/frontend.min.css?ver=3.19.3" media="all" />
+    <link rel="stylesheet" id="elementor-icons-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0" media="all" />
+    <link rel="stylesheet" id="swiper-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all" />
+    <link rel="stylesheet" id="elementor-pro-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.19.3" media="all" />
+    <link rel="stylesheet" id="elementor-global-css" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/elementor/css/global.css?ver=1709777874" media="all" />
+    <link rel="stylesheet" id="elementor-post-40687-css" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/elementor/css/post-40687.css?ver=1709781795" media="all" />
+    <link rel="stylesheet" id="elementor-post-30726-css" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/elementor/css/post-30726.css?ver=1709777470" media="all" />
+    <link rel="stylesheet" id="elementor-post-30723-css" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/elementor/css/post-30723.css?ver=1709812883" media="all" />
+    <link rel="stylesheet" id="elementor-post-35252-css" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/elementor/css/post-35252.css?ver=1709777522" media="all" />
+    <link rel="stylesheet" id="elementor-icons-ekiticons-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.0.1" media="all" />
+    <link rel="stylesheet" id="tablepress-default-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/tablepress/css/build/default.css?ver=2.3" media="all" />
+    <link rel="stylesheet" id="ekit-widget-styles-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.0.1" media="all" />
+    <link rel="stylesheet" id="ekit-responsive-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.0.1" media="all" />
+    <link rel="stylesheet" id="__EPYT__style-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.2.1" media="all" />
+    <style id="__EPYT__style-inline-css">
+      .epyt-gallery-thumb {
+        width: 33.333%;
+      }
+    </style>
+    <link rel="stylesheet" id="eael-general-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.9.14" media="all" />
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Titillium+Web%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.4.3"
+      media="all"
+    />
+    <link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all" />
+    <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all" />
+    <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3" media="all" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <script src="https://fkkmk.ugm.ac.id/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script src="https://fkkmk.ugm.ac.id/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-X1GN9E9SJF" id="google_gtagjs-js" async=""></script>
+    <script id="google_gtagjs-js-after">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("set", "linker", { domains: ["fkkmk.ugm.ac.id"] });
+      gtag("js", new Date());
+      gtag("set", "developer_id.dZTNiMT", true);
+      gtag("config", "G-X1GN9E9SJF");
+    </script>
+
+    <!-- End Google Analytics snippet added by Site Kit -->
+    <script id="__ytprefs__-js-extra">
+      var _EPYT_ = {
+        ajaxurl: "https:\/\/fkkmk.ugm.ac.id\/wp-admin\/admin-ajax.php",
+        security: "c6c0c6f66b",
+        gallery_scrolloffset: "20",
+        eppathtoscripts: "https:\/\/fkkmk.ugm.ac.id\/wp-content\/plugins\/youtube-embed-plus\/scripts\/",
+        eppath: "https:\/\/fkkmk.ugm.ac.id\/wp-content\/plugins\/youtube-embed-plus\/",
+        epresponsiveselector: '["iframe.__youtube_prefs_widget__"]',
+        epdovol: "1",
+        version: "14.2.1",
+        evselector: 'iframe.__youtube_prefs__[src], iframe[src*="youtube.com\/embed\/"], iframe[src*="youtube-nocookie.com\/embed\/"]',
+        ajax_compat: "",
+        maxres_facade: "eager",
+        ytapi_load: "light",
+        pause_others: "",
+        stopMobileBuffer: "1",
+        facade_mode: "",
+        not_live_on_channel: "",
+        vi_active: "",
+        vi_js_posttypes: [],
+      };
+    </script>
+    <script src="https://fkkmk.ugm.ac.id/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.2.1" id="__ytprefs__-js"></script>
+    <link rel="https://api.w.org/" href="https://fkkmk.ugm.ac.id/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://fkkmk.ugm.ac.id/wp-json/wp/v2/pages/40687" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fkkmk.ugm.ac.id/xmlrpc.php?rsd" />
+    <link rel="shortlink" href="https://fkkmk.ugm.ac.id/?p=40687" />
+    <link rel="alternate" type="application/json+oembed" href="https://fkkmk.ugm.ac.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffkkmk.ugm.ac.id%2Fprogram-sarjana%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://fkkmk.ugm.ac.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffkkmk.ugm.ac.id%2Fprogram-sarjana%2F&amp;format=xml" />
+
+    <!-- GA Google Analytics @ https://m0n.co/ga -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128980122-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-128980122-15");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VMLCCXL753"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VMLCCXL753");
+    </script>
+    <meta name="generator" content="Site Kit by Google 1.123.1" />
+    <meta name="tec-api-version" content="v1" />
+    <meta name="tec-api-origin" content="https://fkkmk.ugm.ac.id" />
+    <link rel="alternate" href="https://fkkmk.ugm.ac.id/wp-json/tribe/events/v1/" />
+    <meta name="google-site-verification" content="s49J35oHh9RwU-jjvtyvAaLA_fAN_0Y35Rj4E4ZOy4s" />
+    <meta
+      name="generator"
+      content="Elementor 3.19.3; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto"
+    />
+    <link rel="icon" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/07/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/07/cropped-favicon-300x300.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/07/cropped-favicon-300x300.png" />
+    <meta name="msapplication-TileImage" content="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/07/cropped-favicon-300x300.png" />
+    <style id="sccss">
+      /* Enter Your Custom CSS Here */
+      .id-flag {
+        background-image: url("https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/10/id-flag.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        /*background-size: 25px;*/
+      }
+      .en-flag {
+        background-image: url("https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/10/en-flag.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      /*.elementor img {
+ height:auto;
+ max-width:100%;
+ border:none;
+ -webkit-border-radius:0;
+ border-radius:6px;
+ -webkit-box-shadow:none;
+ box-shadow:none;
+}
+.id-menu-about {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logougm.svg');
+background-repeat: no-repeat;
+background-position: left;
+}
+.id-menu-subabout {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logougm.svg');
+background-repeat: no-repeat;
+background-position: left;
+background-size: 20px;
+}
+.id-menu-academic {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logoacademic.svg');
+background-repeat: no-repeat;
+background-position: left;
+}
+.id-menu-subacademic {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logoacademic.svg');
+background-repeat: no-repeat;
+background-position: left;
+background-size: 20px;
+}
+.id-menu-research {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logoresearch.svg');
+background-repeat: no-repeat;
+background-position: left;
+}
+.id-menu-subresearch {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logoresearch.svg');
+background-repeat: no-repeat;
+background-position: left;
+background-size: 20px;
+}
+.id-menu-community {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logocommunity.svg');
+background-repeat: no-repeat;
+background-position: left;
+}
+.id-menu-subcommunity {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-logocommunity.svg');
+background-repeat: no-repeat;
+background-position: left;
+background-size: 20px;
+}
+.id-menu-admission {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-admission.svg');
+background-repeat: no-repeat;
+background-position: left;
+}
+.id-menu-subadmission {
+background-image: url('https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/11/submenu-admission.svg');
+background-repeat: no-repeat;
+background-position: left;
+background-size: 20px;
+}*/
+      /* style.min.css | https://fkkmk.ugm.ac.id/wp-content/themes/hello-elementor/style.min.css?ver=2.5.0 */
+
+      h5 {
+        font-family: Titillium Web;
+        color: #187407;
+      }
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        /* font-family: inherit; */
+        font-family: Montserrat;
+        color: #187407;
+      }
+      .bdt-member-description {
+        padding: 1em 1.5em;
+        margin: 0 -23px;
+      }
+      ._3d-flip-book .book-thumbnail img {
+        border-radius: 3px !important;
+        width: 230px;
+      }
+      .indo-icon {
+        background-image: url("https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2021/10/id-flag.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-left: 10px;
+      }
+      /*calendar*/
+      span.tribe-events-widget-events-list__event-date-tag-daynum.tribe-common-h2.tribe-common-h4--min-medium {
+        color: #ffffff;
+        border: #007c7c;
+        border-style: solid;
+        background-color: #007c7c;
+        border-width: 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .ectbe-minimal-list-wrapper .ectbe-inner-wrapper {
+        padding: 0px !important;
+        background: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(42, 59, 84, 0.1);
+      }
+      .ectbe-minimal-list-wrapper .ectbe-ev-day {
+        font-size: 35px !important;
+        line-height: 1 !important;
+      }
+      .ectbe-minimal-list-wrapper .ectbe-date-area {
+        background: #a0c814;
+      }
+      h3.tribe-events-widget-events-list__event-title.tribe-common-h7 {
+        font-size: 14px;
+      }
+      element.style {
+      }
+      .tribe-events .tribe-events-c-search_button,
+      .tribe-events button.tribe-events-c-search_button {
+        background-color: #ffa200;
+      }
+      .tribe-events .tribe-events-c-search_button:focus,
+      .tribe-events .tribe-events-c-searchbutton:hover,
+      .tribe-events button.tribe-events-c-searchbutton:focus,
+      .tribe-events button.tribe-events-c-search_button:hover {
+        background-color: #ffcc00;
+      }
+      .tribe-common .tribe-common-c-btn-border,
+      .tribe-common a.tribe-common-c-btn-border {
+        border: 1px solid #ffa200;
+        color: #ffa200;
+      }
+      .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button:hover {
+        background-color: #ffa200;
+      }
+      .tribe-events-c-subscribe-dropdown_button:focus,
+      .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown_button:focus-within {
+        background-color: #ffa200;
+      }
+      .tribe-events .datepicker .day.active,
+      .month.active,
+      .tribe-events .datepicker .month.active.focused {
+        background: #ffa200;
+      }
+      .tribe-events .datepicker .day.active:hover {
+        background-color: #ffcc00;
+      }
+      span.tribe-events-calendar-list__event-date-tag-daynum.tribe-common-h5.tribe-common-h4--min-medium {
+        border: darkgray;
+        border-style: solid;
+        background: darkgray;
+        color: #ffffff;
+        margin: 0 2px 0 2px;
+        font-size: 50px;
+      }
+      span.tribe-events-calendar-list__event-date-tag-weekday {
+        border: darkgrey;
+        border-style: solid;
+        margin: 0 2px 0 2px;
+      }
+      .tribe-events .tribe-events-calendar-list__event-date-tag-weekday {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .tribe-events-widget-events-list__event-datetime-wrapper.tribe-common-b2.tribe-common-b3--min-medium {
+        color: #ffffff;
+      }
+      span.tribe-events-widget-events-list__event-date-tag-month {
+        background-color: #ffffff;
+        width: 59.4px;
+      }
+      span.tribe-events-calendar-latest-past__event-date-tag-daynum.tribe-common-h5.tribe-common-h4--min-medium {
+        color: #ffffff;
+        background-color: darkgrey;
+        margin: 0 15px 0 15px;
+      }
+      span.tribe-events-calendar-latest-past__event-date-tag-month {
+        border: darkgray;
+        border-style: solid;
+        margin: 0 15px;
+      }
+      span.tribe-events-calendar-latest-past__event-date-tag-year {
+        background-color: #cccccc;
+        margin: 0 15px;
+      }
+      .tribe-events-widget .tribe-events-widget-events-list__view-more-link:visited {
+        color: #ffffff;
+      }
+      .tribe-events-widget .tribe-events-widget-events-list__view-more-link {
+        font-weight: bolder;
+      }
+      .ectbe-minimal-list-wrapper .ectbe-ev-day {
+        border: #a0c814;
+        border-style: solid;
+        margin: 0 15px 0 15px;
+        padding: 0 9px;
+        background: #a0c814;
+        color: whitesmoke;
+      }
+      .ectbe-minimal-list-wrapper .ectbe-ev-mo {
+        text-transform: uppercase;
+        border: darkgray;
+        margin: 0 15px 0 15px;
+        padding: 0 8px;
+      }
+      .elementor-column.elementor-col-50.elementor-inner-column.elementor-element.elementor-element-a1632ca {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        width: 40%;
+        max-height: 244px;
+      }
+      /*.elementor-41349 .elementor-element.elementor-element-230a6f8:not(.elementor-motion-effects-element-type-background), .elementor-41349 .elementor-element.elementor-element-230a6f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #EAEAEA;
+    background: url(https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/05/th8u.jpg) 100% 50%;
+    background-size: cover;
+}*/
+
+      li.id-flag.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-46754 {
+        margin-left: 20px;
+      }
+      li.en-flag.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-46752 {
+        margin-left: 20px;
+      }
+      span.elementor-icon-list-text.elementor-post-info__item.elementor-post-info__item--type-terms {
+        padding-left: 5px !important;
+      }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-165289732-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-165289732-1");
+    </script>
+    <!-- Google tag (gtag.js) - GTAG 4 UGM-wide -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L4JC39NX24"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-L4JC39NX24");
+    </script>
+    <script src="https://fkkmk.ugm.ac.id/wp-includes/js/wp-emoji-release.min.js?ver=6.4.3" defer=""></script>
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+  </head>
+  <body
+    class="page-template-default page page-id-40687 wp-custom-logo tribe-js e-lazyload elementor-default elementor-template-full-width elementor-kit-30843 elementor-page elementor-page-40687 elementor-page-44627 elementor-page-43635 elementor-page-31578 elementor-page-35252 e--ua-firefox"
+    data-elementor-device-mode="desktop"
+  >
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <div data-elementor-type="header" data-elementor-id="30726" class="elementor elementor-30726 elementor-location-header" data-elementor-post-type="elementor_library">
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-18af52f elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="18af52f"
+        data-element_type="section"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-1dcafbe" data-id="1dcafbe" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-624dba4 elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
+                data-id="624dba4"
+                data-element_type="widget"
+                data-settings='{"layout":"horizontal","submenu_icon":{"value":"<i class=\"fas fa-caret-down\"><\/i>","library":"fa-solid"},"toggle":"burger"}'
+                data-widget_type="nav-menu.default"
+              >
+                <div class="elementor-widget-container">
+                  <link rel="stylesheet" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css" />
+                  <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+                    <ul id="menu-1-624dba4" class="elementor-nav-menu" data-smartmenus-id="17125055433331553">
+                      
+                    </ul>
+                  
+                  <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="--menu-height: 0">
+                    
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-8e2acc6" data-id="8e2acc6" data-element_type="column" data-settings='{"background_background":"classic"}'>
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-d5dc3ae elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form"
+                data-id="d5dc3ae"
+                data-element_type="widget"
+                data-settings='{"skin":"classic"}'
+                data-widget_type="search-form.default"
+              >
+                <div class="elementor-widget-container">
+                  <link rel="stylesheet" href="https://fkkmk.ugm.ac.id/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css" />
+                  <search role="search">
+                    </form>
+                  </search>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header
+        class="elementor-section elementor-top-section elementor-element elementor-element-7d16b607 elementor-section-full_width elementor-section-content-middle sticky-header elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-sticky"
+        data-id="7d16b607"
+        data-element_type="section"
+        data-settings='{"sticky":"top","sticky_effects_offset":"90","background_background":"classic","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0}'
+        style=""
+      >
+        <div class="elementor-background-overlay"></div>
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2cfd197b" data-id="2cfd197b" data-element_type="column" data-settings='{"background_background":"classic"}'>
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-3b845548 elementor-widget elementor-widget-image" data-id="3b845548" data-element_type="widget" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.19.0 - 26-02-2024 */
+                    .elementor-widget-image {
+                      text-align: center;
+                    }
+                    .elementor-widget-image a {
+                      display: inline-block;
+                    }
+                    .elementor-widget-image a img[src$=".svg"] {
+                      width: 48px;
+                    }
+                    .elementor-widget-image img {
+                      vertical-align: middle;
+                      display: inline-block;
+                    }
+                  </style>
+                  
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+              <div
+                class="elementor-element elementor-element-76fcb304 elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
+                data-id="76fcb304"
+                data-element_type="widget"
+                data-settings='{"full_width":"stretch","submenu_icon":{"value":"<i class=\"fas fa-angle-down\"><\/i>","library":"fa-solid"},"layout":"horizontal","toggle":"burger"}'
+                data-widget_type="nav-menu.default"
+              >
+                <div class="elementor-widget-container">
+                  <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+                    <ul id="menu-1-76fcb304" class="elementor-nav-menu" data-smartmenus-id="171250554334196">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31331">
+                        <a href="#" class="elementor-item elementor-item-anchor has-submenu" id="sm-171250554334196-1" aria-haspopup="true" aria-controls="sm-171250554334196-2" aria-expanded="false"
+                       
+                        </ul>
+                      </li>
+                      <li class=""><a href="#" class="elementor-item" tabindex="-1">&nbsp;&nbsp;</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+
+    <div data-elementor-type="wp-page" data-elementor-id="40687" class="elementor elementor-40687" data-elementor-post-type="page">
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-81db2cb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="81db2cb"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5c1ddaf4 animated fadeIn" data-id="5c1ddaf4" data-element_type="column" data-settings='{"animation":"fadeIn"}'>
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-16082053 elementor-widget elementor-widget-heading" data-id="16082053" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.19.0 - 26-02-2024 */
+                    .elementor-heading-title {
+                      padding: 0;
+                      margin: 0;
+                      line-height: 1;
+                    }
+                    .elementor-widget-heading .elementor-heading-title[class*="elementor-size-"] > a {
+                      color: inherit;
+                      font-size: inherit;
+                      line-height: inherit;
+                    }
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                      font-size: 15px;
+                    }
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                      font-size: 19px;
+                    }
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                      font-size: 29px;
+                    }
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                      font-size: 39px;
+                    }
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                      font-size: 59px;
+                    }
+                  </style>
+                  <h1 class="elementor-heading-title elementor-size-default">Deskripsi Peta</h1>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-3c499871 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3c499871" data-element_type="widget" data-widget_type="divider.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.19.0 - 26-02-2024 */
+                    .elementor-widget-divider {
+                      --divider-border-style: none;
+                      --divider-border-width: 1px;
+                      --divider-color: #0c0d0e;
+                      --divider-icon-size: 20px;
+                      --divider-element-spacing: 10px;
+                      --divider-pattern-height: 24px;
+                      --divider-pattern-size: 20px;
+                      --divider-pattern-url: none;
+                      --divider-pattern-repeat: repeat-x;
+                    }
+                    .elementor-widget-divider .elementor-divider {
+                      display: flex;
+                    }
+                    .elementor-widget-divider .elementor-divider__text {
+                      font-size: 15px;
+                      line-height: 1;
+                      max-width: 95%;
+                    }
+                    .elementor-widget-divider .elementor-divider__element {
+                      margin: 0 var(--divider-element-spacing);
+                      flex-shrink: 0;
+                    }
+                    .elementor-widget-divider .elementor-icon {
+                      font-size: var(--divider-icon-size);
+                    }
+                    .elementor-widget-divider .elementor-divider-separator {
+                      display: flex;
+                      margin: 0;
+                      direction: ltr;
+                    }
+                    .elementor-widget-divider--view-line_icon .elementor-divider-separator,
+                    .elementor-widget-divider--view-line_text .elementor-divider-separator {
+                      align-items: center;
+                    }
+                    .elementor-widget-divider--view-line_icon .elementor-divider-separator:after,
+                    .elementor-widget-divider--view-line_icon .elementor-divider-separator:before,
+                    .elementor-widget-divider--view-line_text .elementor-divider-separator:after,
+                    .elementor-widget-divider--view-line_text .elementor-divider-separator:before {
+                      display: block;
+                      content: "";
+                      border-block-end: 0;
+                      flex-grow: 1;
+                      border-block-start: var(--divider-border-width) var(--divider-border-style) var(--divider-color);
+                    }
+                    .elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator > .elementor-divider__svg:first-of-type {
+                      flex-grow: 0;
+                      flex-shrink: 100;
+                    }
+                    .elementor-widget-divider--element-align-left .elementor-divider-separator:before {
+                      content: none;
+                    }
+                    .elementor-widget-divider--element-align-left .elementor-divider__element {
+                      margin-left: 0;
+                    }
+                    .elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator > .elementor-divider__svg:last-of-type {
+                      flex-grow: 0;
+                      flex-shrink: 100;
+                    }
+                    .elementor-widget-divider--element-align-right .elementor-divider-separator:after {
+                      content: none;
+                    }
+                    .elementor-widget-divider--element-align-right .elementor-divider__element {
+                      margin-right: 0;
+                    }
+                    .elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator > .elementor-divider__svg:first-of-type {
+                      flex-grow: 0;
+                      flex-shrink: 100;
+                    }
+                    .elementor-widget-divider--element-align-start .elementor-divider-separator:before {
+                      content: none;
+                    }
+                    .elementor-widget-divider--element-align-start .elementor-divider__element {
+                      margin-inline-start: 0;
+                    }
+                    .elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator > .elementor-divider__svg:last-of-type {
+                      flex-grow: 0;
+                      flex-shrink: 100;
+                    }
+                    .elementor-widget-divider--element-align-end .elementor-divider-separator:after {
+                      content: none;
+                    }
+                    .elementor-widget-divider--element-align-end .elementor-divider__element {
+                      margin-inline-end: 0;
+                    }
+                    .elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
+                      border-block-start: var(--divider-border-width) var(--divider-border-style) var(--divider-color);
+                    }
+                    .elementor-widget-divider--separator-type-pattern {
+                      --divider-border-style: none;
+                    }
+                    .elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,
+                    .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,
+                    .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+                    .elementor-widget-divider--separator-type-pattern:not([class*="elementor-widget-divider--view"]) .elementor-divider-separator {
+                      width: 100%;
+                      min-height: var(--divider-pattern-height);
+                      -webkit-mask-size: var(--divider-pattern-size) 100%;
+                      mask-size: var(--divider-pattern-size) 100%;
+                      -webkit-mask-repeat: var(--divider-pattern-repeat);
+                      mask-repeat: var(--divider-pattern-repeat);
+                      background-color: var(--divider-color);
+                      -webkit-mask-image: var(--divider-pattern-url);
+                      mask-image: var(--divider-pattern-url);
+                    }
+                    .elementor-widget-divider--no-spacing {
+                      --divider-pattern-size: auto;
+                    }
+                    .elementor-widget-divider--bg-round {
+                      --divider-pattern-repeat: round;
+                    }
+                    .rtl .elementor-widget-divider .elementor-divider__text {
+                      direction: rtl;
+                    }
+                    .e-con-inner > .elementor-widget-divider,
+                    .e-con > .elementor-widget-divider {
+                      width: var(--container-widget-width, 100%);
+                      --flex-grow: var(--container-widget-flex-grow);
+                    }
+                  </style>
+                  <div class="elementor-divider">
+                    <span class="elementor-divider-separator"> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-5f8d4a88 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="5f8d4a88"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-45fa7ef9" data-id="45fa7ef9" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-2cf4a992 elementor-widget elementor-widget-spacer" data-id="2cf4a992" data-element_type="widget" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.19.0 - 26-02-2024 */
+                    .elementor-column .elementor-spacer-inner {
+                      height: var(--spacer-size);
+                    }
+                    .e-con {
+                      --container-widget-width: 100%;
+                    }
+                    .e-con-inner > .elementor-widget-spacer,
+                    .e-con > .elementor-widget-spacer {
+                      width: var(--container-widget-width, var(--spacer-size));
+                      --align-self: var(--container-widget-align-self, initial);
+                      --flex-shrink: 0;
+                    }
+                    .e-con-inner > .elementor-widget-spacer > .elementor-widget-container,
+                    .e-con > .elementor-widget-spacer > .elementor-widget-container {
+                      height: 100%;
+                      width: 100%;
+                    }
+                    .e-con-inner > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer,
+                    .e-con > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer {
+                      height: 100%;
+                    }
+                    .e-con-inner > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer > .elementor-spacer-inner,
+                    .e-con > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer > .elementor-spacer-inner {
+                      height: var(--container-widget-height, var(--spacer-size));
+                    }
+                    .e-con-inner > .elementor-widget-spacer.elementor-widget-empty,
+                    .e-con > .elementor-widget-spacer.elementor-widget-empty {
+                      position: relative;
+                      min-height: 22px;
+                      min-width: 22px;
+                    }
+                    .e-con-inner > .elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,
+                    .e-con > .elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      left: 0;
+                      right: 0;
+                      margin: auto;
+                      padding: 0;
+                      width: 22px;
+                      height: 22px;
+                    }
+                  </style>
+                  <div class="elementor-spacer">
+                    <div class="elementor-spacer-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-78d64292 elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-boxed elementor-section-height-default animated fadeIn"
+        data-id="78d64292"
+        data-element_type="section"
+        data-settings='{"animation":"fadeIn"}'
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-35e7149b" data-id="35e7149b" data-element_type="column" data-settings='{"background_background":"classic"}'>
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-f45ec6c elementor-widget elementor-widget-image" data-id="f45ec6c" data-element_type="widget" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                  <img
+                    fetchpriority="high"
+                    decoding="async"
+                    width="800"
+                    height="1000"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKO8dEtdBbzy78v56b5tXBg4zV5ZJIFrzHbw&usqp=CAU"
+                    class="attachment-large size-large wp-image-40669"
+                    alt=""
+                    srcset="
+                    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4sjB_qY1_6924yuBhneFW5StZm7lEf6rWw&usqp=CAU
+                    "
+                    sizes="(max-width: 800px) 100vw, 800px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-109c5324" data-id="109c5324" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-1e318aa1 elementor-widget elementor-widget-heading" data-id="1e318aa1" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                  <h2 class="elementor-heading-title elementor-size-default">Peta Persebaran Toko Sembako di Kabupaten Bantul </h2>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-4210bdec elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="4210bdec" data-element_type="widget" data-widget_type="divider.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-divider">
+                    <span class="elementor-divider-separator"> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-679362d elementor-widget elementor-widget-text-editor" data-id="679362d" data-element_type="widget" data-widget_type="text-editor.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.19.0 - 26-02-2024 */
+                    .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                      background-color: #69727d;
+                      color: #fff;
+                    }
+                    .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                      color: #69727d;
+                      border: 3px solid;
+                      background-color: transparent;
+                    }
+                    .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                      margin-top: 8px;
+                    }
+                    .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                      width: 1em;
+                      height: 1em;
+                    }
+                    .elementor-widget-text-editor .elementor-drop-cap {
+                      float: left;
+                      text-align: center;
+                      line-height: 1;
+                      font-size: 50px;
+                    }
+                    .elementor-widget-text-editor .elementor-drop-cap-letter {
+                      display: inline-block;
+                    }
+                  </style>
+                  <blockquote>
+                    Di atas merupakan Peta persebaran toko sembako di Kabupaten Bantul. Peta ini  adalah sebuah representasi visual yang menggambarkan lokasi geografis dari toko-toko sembako. Peta ini dirancang untuk memberikan gambaran yang jelas tentang distribusi spasial toko sembako di Kabupaten Bantul. Selain itu, Peta persebaran toko sembako di Kabupaten Bantul menjadi alat yang penting dalam pemetaan ekonomi lokal dan membantu pemerintah serta pemangku kepentingan lainnya dalam merencanakan strategi pembangunan ekonomi yang berkelanjutan serta peningkatan akses masyarakat terhadap barang-barang kebutuhan pokok. 
+                  </blockquote>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-11c62cad elementor-widget elementor-widget-button" data-id="11c62cad" data-element_type="widget" data-widget_type="button.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-button-wrapper">
+    
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-2832ede4 elementor-position-top elementor-widget elementor-widget-image-box" data-id="2832ede4" data-element_type="widget" data-widget_type="image-box.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.19.0 - 26-02-2024 */
+                    .elementor-widget-image-box .elementor-image-box-content {
+                      width: 100%;
+                    }
+                    @media (min-width: 768px) {
+                      .elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,
+                      .elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+                        display: flex;
+                      }
+                      .elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+                        text-align: right;
+                        flex-direction: row-reverse;
+                      }
+                      .elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper {
+                        text-align: left;
+                        flex-direction: row;
+                      }
+                      .elementor-widget-image-box.elementor-position-top .elementor-image-box-img {
+                        margin: auto;
+                      }
+                      .elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper {
+                        align-items: flex-start;
+                      }
+                      .elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper {
+                        align-items: center;
+                      }
+                      .elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper {
+                        align-items: flex-end;
+                      }
+                    }
+                    @media (max-width: 767px) {
+                      .elementor-widget-image-box .elementor-image-box-img {
+                        margin-left: auto !important;
+                        margin-right: auto !important;
+                        margin-bottom: 15px;
+                      }
+                    }
+                    .elementor-widget-image-box .elementor-image-box-img {
+                      display: inline-block;
+                    }
+                    .elementor-widget-image-box .elementor-image-box-title a {
+                      color: inherit;
+                    }
+                    .elementor-widget-image-box .elementor-image-box-wrapper {
+                      text-align: center;
+                    }
+                    .elementor-widget-image-box .elementor-image-box-description {
+                      margin: 0;
+                    }
+                  </style>
+                  <div class="elementor-image-box-wrapper">
+                    <figure class="elementor-image-box-img">
+                      <a href="/eng/iup/" tabindex="-1"
+                        ><img
+                          decoding="async"
+                          width="1500"
+                          height="630"
+                          src="https://fkkmk.ugm.ac.id/wp-content/uploads/sites/33/2023/05/outgoing.jpghttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNjJpyotCfquRbnLp1rggqEFKsIOor6QCWA&usqp=CAU"
+                          class="attachment-full size-full wp-image-40670"
+                          alt=""
+                          srcset="
+                          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNjJpyotCfquRbnLp1rggqEFKsIOor6QCWA&usqp=CAU
+                          "
+                          sizes="(max-width: 1500px) 100vw, 1500px"
+                      /></a>
+                    </figure>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-60616aa5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="60616aa5"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6e39cf3b" data-id="6e39cf3b" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-1c2b4872 elementor-widget elementor-widget-spacer" data-id="1c2b4872" data-element_type="widget" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-spacer">
+                    <div class="elementor-spacer-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-54b413dc elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-boxed elementor-section-height-default animated fadeIn"
+        data-id="54b413dc"
+        data-element_type="section"
+        data-settings='{"animation":"fadeIn"}'
+      >
+
+
+      
+
+</body>
+</html>
